@@ -20,7 +20,6 @@ const Expenses = (props) => {
   return(
     <div>
       <Card className="expenses">
-        {/* Component below is an example of a controlled component */}
         <ExpensesFilter 
           selectedYear={filteredYear} 
           onSaveDateFilter={expensesDateFilterHanlder}  
