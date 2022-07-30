@@ -12,7 +12,6 @@ const ChartBar = props => {
     }
 
     // setting the style of div element dynamically to generate bar height
-    // the style props take a javascript object when called
     return (
         <div className="ChartBar">
             <div className="chart-bar__inner">
