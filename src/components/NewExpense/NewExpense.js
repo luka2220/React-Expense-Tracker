@@ -7,17 +7,12 @@ const NewExpense = (props) => {
 
     const [isEditing, setisEditing] = useState(false);
 
-    // Function will be executed in ExpenseForm where the expense
-    // data that is submitted from the form will be passed as an
-    // argument => Child-to-Parent Component Communication
     const saveExpenseDataHandler = (enteredExpenseData) => {
         const expenseData = {
-            // adding all the previous expenseData => {title, amount, date}
-            id: Math.round(Math.random() * 100).toString(),  // id will be set to a random nnumber
+            id: Math.round(Math.random() * 100).toString(),
             ...enteredExpenseData
         };
 
-        //console.table(expenseData);
         props.addExpense(expenseData);
         
         setisEditing(false);
