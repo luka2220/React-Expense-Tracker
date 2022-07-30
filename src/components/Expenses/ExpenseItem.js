@@ -4,10 +4,6 @@ import './ExpenseItem.css';
 import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 
-// we need one var arg for props to be able to be passed 
-// from another component. The var name can be anything,
-// but typically it is named props
-
 const ExpenseItem = (props) => {
     return(
         <li>
